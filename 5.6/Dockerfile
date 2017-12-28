@@ -31,9 +31,6 @@ RUN pecl install xdebug
 # install redis
 RUN pecl install redis
 
-# install opcache
-RUN pecl install opcache
-
 # drush command
 RUN curl -fsSL -o /usr/local/bin/drush "https://github.com/drush-ops/drush/releases/download/$DRUSH_VERSION/drush.phar" && \
     chmod +x /usr/local/bin/drush
