@@ -49,5 +49,5 @@ RUN curl https://drupalconsole.com/installer -L -o drupal.phar && \
     mv drupal.phar /usr/local/bin/drupal && \
     chmod +x /usr/local/bin/drupal
 
-VOLUME /app/web
+VOLUME ["/usr/local/etc","/app/web"]
 WORKDIR /app/web
